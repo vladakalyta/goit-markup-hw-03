@@ -133,13 +133,14 @@ body {
 /* MAIN */
 /* HERO */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--bg-dark);
   height: 600px;
 }
 .hero-title {
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -186,7 +187,9 @@ body {
 .features-list {
   display: flex;
 }
-
+.features-list li {
+  width: 270px;
+}
 .features-list li + li {
   margin-left: 30px;
 }
@@ -247,20 +250,27 @@ body {
 .team-members li + li {
   margin-left: 30px;
 }
-.team-member > h3 {
+.team-member img {
+  display: block;
+}
+
+.team-name-position {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-primary-title);
 }
-.team-member > p {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.team-position {
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-primary-text);
@@ -285,7 +295,7 @@ body {
 .footer-info > a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .footer-info > a:hover,
 .footer-info > a:focus {
@@ -294,7 +304,6 @@ body {
 
 /* PORTFOLIO PAGE */
 .portfolio-section {
-  background-color: var(--bg-light);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -307,6 +316,10 @@ body {
   margin-left: 9px;
 }
 .filter-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
   min-height: 38px;
   font-family: inherit;
   font-weight: 500;
@@ -350,6 +363,10 @@ body {
 .portfolio-item a {
   text-decoration: none;
 }
+.portfolio-item img {
+  display: block;
+}
+
 .portfolio-name {
   padding-bottom: 4px;
   font-weight: 700;
@@ -365,8 +382,9 @@ body {
   color: var(--color-primary-text);
 }
 .type-and-name {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
 }
